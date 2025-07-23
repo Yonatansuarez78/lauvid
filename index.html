@@ -48,6 +48,60 @@
 
      <!-- Registro sitio web en google console -->
      <meta name="google-site-verification" content="JYPhyv7nEMQqerdN0a37NV6I1ZDYGjUGBAORQqF1cLQ" />
+
+     <!-- Código JSON-LD -->
+     <script type="application/ld+json">
+     {
+       "@context": "https://schema.org",
+       "@type": "Recipe",
+       "name": "Ensalada energética con frutas deshidratadas",
+       "description": "Una ensalada saludable y refrescante que combina frutas deshidratadas de Lauvid S.A.S con nueces y miel natural.",
+       "image": "https://lauvid.vercel.app/images/ensalada-frutas.jpg",
+       "author": {
+         "@type": "Organization",
+         "name": "Lauvid S.A.S"
+       },
+       "datePublished": "2025-07-23",
+       "prepTime": "PT10M",
+       "cookTime": "PT0M",
+       "totalTime": "PT10M",
+       "recipeYield": "2 porciones",
+       "recipeCategory": "Ensalada",
+       "recipeCuisine": "Saludable",
+       "keywords": "frutas deshidratadas, ensalada saludable, Lauvid, receta natural",
+       "nutrition": {
+         "@type": "NutritionInformation",
+         "calories": "180 calorías"
+       },
+       "recipeIngredient": [
+         "1 taza de frutas deshidratadas Lauvid (piña, mango, manzana)",
+         "1/4 taza de nueces",
+         "1 cucharadita de miel",
+         "Hojas de espinaca fresca"
+       ],
+       "recipeInstructions": [
+         {
+           "@type": "HowToStep",
+           "text": "Coloca las hojas de espinaca en un plato."
+         },
+         {
+           "@type": "HowToStep",
+           "text": "Agrega las frutas deshidratadas y las nueces."
+         },
+         {
+           "@type": "HowToStep",
+           "text": "Rocía con miel natural al gusto."
+         },
+         {
+           "@type": "HowToStep",
+           "text": "Sirve y disfruta de una opción saludable y deliciosa."
+         }
+       ]
+     }
+     </script>
+
+
+
 </head>
 
 
@@ -125,7 +179,7 @@
                               </div>
                               <!-- Imagen -->
                               <div class="col-lg-6 col-md-12 text-center" style="margin-top: 30px;">
-                                   <img src="./images/producto.jpg" alt="Imagen" class="img-fluid"
+                                   <img src="./images/producto.jpg" alt="Imagen" class="img-fluid" loading="lazy"
                                         style="max-width: 100%; height: auto; border-radius: 10px;">
                               </div>
                          </div>
@@ -199,7 +253,7 @@
                               ti y tu familia.
                          </p>
 
-                         <img src="./images/taza.jpg"
+                         <img src="./images/taza.jpg" loading="lazy"
                               style="width: 350px; display: block; margin: 1rem auto 0; border-radius: 10px;">
                     </div>
 
@@ -228,7 +282,7 @@
                                    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
                                         <!-- Imagen -->
                                         <div style="flex: 0 0 150px;">
-                                             <img src="./images/testimonio 2.jpg"
+                                             <img src="./images/testimonio 2.jpg" loading="lazy"
                                                   style="width: 105%; border-radius: 20px; display: block;">
                                         </div>
                                         <!-- Texto -->
@@ -255,7 +309,7 @@
                                    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
                                         <!-- Imagen -->
                                         <div style="flex: 0 0 150px;">
-                                             <img src="./images/testimonios 1.jpg"
+                                             <img src="./images/testimonios 1.jpg" loading="lazy"
                                                   style="width: 100%; border-radius: 20px; display: block;">
                                         </div>
                                         <!-- Texto -->
@@ -279,10 +333,12 @@
                                    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
                                         <!-- Video -->
                                         <div style="flex: 0 0 150px;">
-                                             <video controls style="width: 100%; border-radius: 20px; display: block;">
+                                             <video controls style="width: 100%; border-radius: 20px; display: block;"
+                                                  preload="none" poster="./images/video/poster.jpg">
                                                   <source src="./images/video/video.mp4" type="video/mp4">
                                                   Tu navegador no soporta el video.
                                              </video>
+
                                         </div>
                                         <!-- Texto -->
                                         <div style="flex: 1;">
@@ -303,10 +359,13 @@
                                    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
                                         <!-- Video -->
                                         <div style="flex: 0 0 150px;">
-                                             <video controls style="width: 100%; border-radius: 20px; display: block;">
+                                             <video controls preload="none"
+                                                  poster="./images/video/poster-terraplaza.jpg"
+                                                  style="width: 100%; border-radius: 20px; display: block;">
                                                   <source src="./images/video/video terraplaza.mp4" type="video/mp4">
                                                   Tu navegador no soporta el video.
                                              </video>
+
                                         </div>
                                         <!-- Texto -->
                                         <div style="flex: 1;">
@@ -377,7 +436,7 @@
                               <!-- <h4>They are nice &amp; friendly</h4> -->
                          </div>
                     </div>
-                    <img src="./images/beneficios 1.jpg" alt="imagen beneficios"
+                    <img src="./images/beneficios 1.jpg" alt="imagen beneficios" loading="lazy"
                          style="width: 70%; border-radius: 15px;">
 
                     <div class="col-md-4 col-sm-4" style="margin-top: 20px;">
@@ -451,7 +510,7 @@
 
                     <div class="col-md-4 col-sm-4">
                          <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
-                              <img src="images/Snack de frutas deshidratada x 20g.jpeg.jpg" class="img-responsive"
+                              <img src="images/Snack de frutas deshidratada x 20g.jpeg.jpg" class="img-responsive" loading="lazy"
                                    alt="imagen Atributos diferenciales">
                               <div class="team-hover">
                                    <div class="team-item">
@@ -471,7 +530,7 @@
 
                     <div class="col-md-4 col-sm-4">
                          <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
-                              <img src="images/Paquete de Infusiones de fruta Deshidratada x 6 sachets.jpg"
+                              <img src="images/Paquete de Infusiones de fruta Deshidratada x 6 sachets.jpg" loading="lazy"
                                    class="img-responsive" alt="imagen Atributos diferenciales">
                               <div class="team-hover">
                                    <div class="team-item">
@@ -489,7 +548,7 @@
 
                     <div class="col-md-4 col-sm-4">
                          <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
-                              <img src="images/Tomates Deshidratados al Vacio x 100g.jpg" class="img-responsive"
+                              <img src="images/Tomates Deshidratados al Vacio x 100g.jpg" class="img-responsive" loading="lazy"
                                    alt="imagen Atributos diferenciales">
                               <div class="team-hover">
                                    <div class="team-item">
@@ -513,7 +572,7 @@
 
                <div class="col-md-4 col-sm-4">
                     <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
-                         <img src="images/foto 3 granolas.png" class="img-responsive" alt="imagen granolas"
+                         <img src="images/foto 3 granolas.png" class="img-responsive" alt="imagen granolas" loading="lazy"
                               style="height: 350px;">
                          <div class="team-hover">
                               <div class="team-item">
@@ -555,7 +614,7 @@
                     <!-- Contenedor de imagen -->
                     <div class="col-12 col-md-6">
                          <div class="p-3 rounded shadow-sm bg-white text-center">
-                              <img src="./images/image vuelo.jpg" alt="Beneficios"
+                              <img src="./images/image vuelo.jpg" alt="Beneficios" loading="lazy"
                                    class="img-fluid rounded w-100 h-auto"
                                    style="max-width: 100%; height: auto; object-fit: cover;">
                          </div>
